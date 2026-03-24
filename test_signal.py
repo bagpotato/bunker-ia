@@ -2,7 +2,7 @@ import requests
 import time
 
 URL = "http://localhost:8080"
-MI_NUMERO = "+34617285345"
+MI_NUMERO = "+(number)"
 
 print("--- MODO PRUEBA DE ECO ACTIVO ---")
 
