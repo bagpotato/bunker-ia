@@ -1,0 +1,5 @@
+ollama_data/
+webui_data/
+*.tar
+*.gz
+.env
