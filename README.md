@@ -1,4 +1,4 @@
-# Bunker IA: Infraestructura Local de Inferencia
+# IA-local: Infraestructura Local de Inferencia
 
 Entorno auto-alojado diseñado para ejecucion de LLMs en hardware x86_64 con recursos limitados.
 
