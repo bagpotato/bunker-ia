@@ -1,31 +1,26 @@
-# Bunker IA: Infraestructura de Inferencia Local
+# Bunker IA: Infraestructura Local de Inferencia
 
-Este repositorio contiene la configuracion necesaria para desplegar un entorno privado de Inteligencia Artificial optimizado para asistencia en programacion y ejecucion en hardware de recursos limitados (x86_64).
+Entorno auto-alojado diseñado para ejecucion de LLMs en hardware x86_64 con recursos limitados.
 
-## Modelos Incluidos
+## Stack Tecnologico
+- Ollama: Backend de inferencia.
+- Open WebUI: Interfaz de usuario profesional.
+- Docker Compose: Orquestacion de microservicios.
+- Tailscale: Acceso remoto via red mesh privada.
 
-El sistema despliega automaticamente los siguientes modelos:
-- **Qwen 2.5 Coder 1.5B:** Especializado en generacion y depuracion de codigo.
-- **Gemma-3-1B Thinking:** Modelo ligero de razonamiento (uncensored) optimizado para baja latencia en CPUs domesticas.
+## Modelos Predeterminados
+1. Qwen 2.5 Coder 1.5B: Especializado en desarrollo de software.
+2. Gemma-3-1B Thinking: Razonamiento ligero (Uncensored) para CPUs domesticas.
 
-## Instalacion y Despliegue
+## Instrucciones de Instalacion
+Clonar el repositorio y ejecutar el script de provisionamiento:
+```bash
+git clone https://github.com/bagpotato/bunker-ia.git
+cd bunker-ia
+./instalar.sh
+```
 
-Siga estos pasos para la replicacion del nodo:
-
-1. Clonar el repositorio:
-   git clone https://github.com/bagpotato/bunker-ia.git
-   cd bunker-ia
-
-2. Ejecucion del script de aprovisionamiento:
-   chmod +x instalar.sh
-   ./instalar.sh
-
-## Configuracion de Acceso
-
-- **Web UI:** Puerto 3000
-- **Ollama API:** Puerto 11434
-- **Acceso Remoto:** http://[IP_PRIVADA_TAILSCALE]:3000
-
-## Especificaciones Tecnicas
-- Orquestacion: Docker Compose.
-- Seguridad: Red privada mesh via Tailscale.
+## Puertos y Acceso
+- Interfaz Web: http://localhost:3000
+- Ollama API: http://localhost:11434
+- Remoto: IP_Tailscale:3000

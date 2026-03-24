@@ -3,3 +3,5 @@ webui_data/
 *.tar
 *.gz
 .env
+__pycache__/
+*.pyc
