@@ -131,8 +131,8 @@ Tailscale es la pieza clave para la seguridad y portabilidad del proyecto. Crea 
 Es necesario descargar los modelos manualmente antes de su primer uso:
 ```bash
 ollama pull llama3       # Modelo equilibrado de Meta
-ollama pull mistral      # Optimizado para eficiencia
-ollama pull llava        # Modelo multimodal (soporta imágenes)
+ollama pull mistral (no usado en el repositorio)     # Optimizado para eficiencia
+ollama pull llava (no usado en el repositorio)       # Modelo multimodal (soporta imágenes)
 ```
 
 ### Mantenimiento de la Interfaz
@@ -147,5 +147,3 @@ ollama pull llava        # Modelo multimodal (soporta imágenes)
 Para confirmar que el acceso remoto es funcional, verifique que puede realizar un ping a la IP de Tailscale desde un dispositivo externo conectado a la misma cuenta de Tailscale.
 
 ---
-
-¿Te gustaría que añada una sección específica sobre cómo configurar la aceleración por GPU (NVIDIA Container Toolkit) para Docker?
